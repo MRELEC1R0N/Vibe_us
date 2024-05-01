@@ -1,0 +1,72 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="{% static 'styling/login.css' %}">
+    <link rel="stylesheet" href="{% static 'styling/login2.css' %}">
+
+</head>
+<body>
+    <div class="personality-matchmaking-app-">
+        <!-- Header and other parts of your HTML code -->
+
+        <section class="property-1simple-centered-sig" id="top">
+            <div class="sign-up-container">
+                <form class="copy-component4" method="post">
+                    {% csrf_token %}
+                    <div class="frame-parent">
+                        <!-- Rest of your HTML code -->
+
+                        <h1 class="sign-up-heading">Sign Up</h1>
+                        <div class="subheading-parent">
+                            <div class="subheading10">Join Our Tribe Today!</div>
+                        </div>
+                        <div class="form">
+                            <div class="input">
+                                <div class="input-form">
+                                    <input
+                                        class="text-container1"
+                                        placeholder="User Name"
+                                        type="text"
+                                        name="new-username"
+                                    />
+                                </div>
+                                <div class="input-form1">
+                                    <input
+                                        class="text-container2"
+                                        placeholder="Password"
+                                        type="password"
+                                        name="new-password"
+                                    />
+                                </div>
+                                <div class="input-form2">
+                                    <input
+                                        class="text-container3"
+                                        placeholder="Confirm Password"
+                                        type="password"
+                                        name="confirm_password"
+                                    />
+                                </div>
+                            </div>
+                            <button class="button2" type="submit">
+                                <div class="text-container3">
+                                    <div class="cta5">Sign Up</div>
+                                </div>
+                            </button>
+                            <div id="sign-up-n">
+                                <a class="link-a2" href="../login/Login.html"> Already have an account? Login!</a>
+                            </div>
+                        </div>
+                        <div class="by-continuing-you">Terms & Privacy Agreement</div>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Footer and other parts of your HTML code -->
+        </div>
+    </body>
+</html>
